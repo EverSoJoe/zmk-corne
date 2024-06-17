@@ -79,7 +79,7 @@
             label = "CW_GERMAN";
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-            continue-list = <UNDERSCORE BACKSPACE DELETE BACKSLASH QUESTION APOSTROPHE SINGLE_QUOTE SEMICOLON COLON LEFT_BRACKET LEFT_BRACE>;
+            continue-list = <DE_U_UMLAUT DE_A_UMLAUT DE_O_UMLAUT DE_MINUS BACKSPACE DELETE UNDERSCORE>;
         };
     };
 
