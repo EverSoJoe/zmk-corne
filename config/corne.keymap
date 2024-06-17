@@ -14,7 +14,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SHIFT_CAPS";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&caps_word>;
+            bindings = <&kp LEFT_SHIFT>, <&cw_german>;
 
             tapping-term-ms = <280>;
         };
@@ -72,6 +72,14 @@
             bindings = <&kp LGUI>, <&kp LALT>;
 
             tapping-term-ms = <280>;
+        };
+
+        cw_german: cw_german {
+            compatible = "zmk,behavior-caps-word";
+            label = "CW_GERMAN";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+            continue-list = <UNDERSCORE BACKSPACE DELETE BACKSLASH QUESTION APOSTROPHE SINGLE_QUOTE SEMICOLON COLON LEFT_BRACKET LEFT_BRACE>;
         };
     };
 
