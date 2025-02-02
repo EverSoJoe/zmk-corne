@@ -14,7 +14,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SHIFT_CAPS";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&cw_german>;
+            bindings = <&none>, <&cw_german>;
 
             tapping-term-ms = <280>;
         };
@@ -79,7 +79,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             hold-while-undecided;
-            hold-while-undecided-linger;
         };
     };
 
@@ -94,6 +93,11 @@
         alt+ctrl {
             bindings = <&kp LA(LCTRL)>;
             key-positions = <36 37>;
+        };
+
+        mo_control {
+            bindings = <&mo 3>;
+            key-positions = <39 40>;
         };
     };
 
@@ -149,7 +153,7 @@
 &kp ESC   &kp TAB    &kp DE_Q  &kp DE_W  &kp DE_E  &kp DE_R     &none  &none  &none  &none  &none  &none
 &kp DE_T  &kp LSHFT  &kp DE_A  &kp DE_S  &kp DE_D  &kp DE_F     &none  &none  &none  &none  &none  &none
 &kp DE_G  &kp LCTRL  &kp DE_Z  &kp DE_X  &kp DE_C  &kp DE_V     &none  &none  &none  &none  &none  &none
-                               &kp DE_B  &kp LALT  &kp SPACE    &to 0  &to 6  &none
+                               &kp DE_B  &kp LALT  &kp SPACE    &to 6  &to 0  &none
             >;
 
             label = "GAME";
