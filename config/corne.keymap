@@ -95,12 +95,6 @@
             bindings = <&kp LA(LCTRL)>;
             key-positions = <36 37>;
         };
-
-        mo_control {
-            bindings = <&mo 3>;
-            key-positions = <4 5>;
-            layers = <0>;
-        };
     };
 
     keymap {
