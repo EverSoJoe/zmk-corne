@@ -88,6 +88,7 @@
         mo_numpad {
             bindings = <&mo 5>;
             key-positions = <37 38>;
+            layers = <0>;
         };
 
         alt+ctrl {
@@ -98,6 +99,7 @@
         mo_control {
             bindings = <&mo 3>;
             key-positions = <39 40>;
+            layers = <0>;
         };
     };
 
