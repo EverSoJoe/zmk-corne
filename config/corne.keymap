@@ -98,7 +98,7 @@
 
         mo_control {
             bindings = <&mo 3>;
-            key-positions = <40 39>;
+            key-positions = <40 41>;
             layers = <0>;
         };
     };
