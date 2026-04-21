@@ -81,10 +81,10 @@
             hold-while-undecided;
         };
 
-        ht_layer_tap: ht_layer_tap {
+        ht_layer_tap_b: ht_layer_tap_b {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT_LAYER_TAP";
-            bindings = <&mo>, <&kp>;
+            label = "HT_LAYER_TAP_B";
+            bindings = <&mo>, <&human_tap>;
 
             #binding-cells = <2>;
             tapping-term-ms = <250>;
@@ -105,6 +105,16 @@
         alt+ctrl {
             bindings = <&kp LA(LCTRL)>;
             key-positions = <36 37>;
+        };
+    };
+
+    macros {
+        human_tap: human_tap {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DE_B>;
+            label = "HUMAN_TAP";
+            tap-ms = <25>;
         };
     };
 
@@ -168,10 +178,10 @@
 
         gaming {
             bindings = <
-&kp ESC   &kp TAB    &kp DE_Q  &kp DE_W              &kp DE_E  &kp DE_R     &none  &none  &none  &none  &none  &none
-&kp DE_T  &kp LSHFT  &kp DE_A  &kp DE_S              &kp DE_D  &kp DE_F     &none  &none  &none  &none  &none  &none
-&kp DE_G  &kp LCTRL  &kp DE_Z  &kp DE_X              &kp DE_C  &kp DE_V     &none  &none  &none  &none  &none  &none
-                               &ht_layer_tap 6 DE_B  &kp LALT  &kp SPACE    &to 7  &to 0  &none
+&kp ESC   &kp TAB    &kp DE_Q  &kp DE_W                &kp DE_E  &kp DE_R     &none  &none  &none  &none  &none  &none
+&kp DE_T  &kp LSHFT  &kp DE_A  &kp DE_S                &kp DE_D  &kp DE_F     &none  &none  &none  &none  &none  &none
+&kp DE_G  &kp LCTRL  &kp DE_Z  &kp DE_X                &kp DE_C  &kp DE_V     &none  &none  &none  &none  &none  &none
+                               &ht_layer_tap_b 6 DE_B  &kp LALT  &kp SPACE    &to 7  &to 0  &none
             >;
 
             label = "GAME";
